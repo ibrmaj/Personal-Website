@@ -4,7 +4,7 @@ import ibrahimImg from '../assets/ibrahim.jpeg';
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative min-h-[80vh] flex flex-col md:flex-row items-center justify-center gap-12 px-6 py-16 bg-gradient-radial from-charcoal via-charcoal to-teal/10 overflow-hidden">
+    <section id="hero" className="relative min-h-[80vh] flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 px-6 py-16 bg-gradient-radial from-charcoal via-charcoal to-teal/10 overflow-hidden">
       {/* SVG Noise Texture Overlay (restored) */}
       <div
         aria-hidden="true"
@@ -20,13 +20,12 @@ export default function Hero() {
       <div className="absolute -top-32 -left-32 w-96 h-96 bg-teal/30 rounded-full blur-3xl z-0" />
       <div className="absolute -bottom-32 -right-32 w-96 h-96 bg-teal/20 rounded-full blur-3xl z-0" />
       <motion.div
-        className="flex-1 flex flex-col items-start justify-center z-10"
+        className="flex-1 flex flex-col items-center md:items-end justify-center z-10 text-center md:text-right"
         initial={{ opacity: 0, x: -40 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.4, ease: 'easeInOut' }}
       >
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-softwhite">Hey, I’m Ibrahim</h1>
-        <p className="text-lg md:text-xl text-teal font-medium mb-2">I build data-driven products that turn ideas into impact.</p>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-softwhite">Hey, I'm Ibrahim</h1>
       </motion.div>
       <motion.div
         className="flex-1 flex items-center justify-center z-10"

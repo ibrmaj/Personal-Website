@@ -3,6 +3,17 @@ import { motion } from 'framer-motion';
 
 const experiences = [
   {
+    title: 'Software Engineering Intern @ Topline Sports',
+    period: '2025–present',
+    bullets: [
+      'Launched a full-stack booking platform with Next.js, Firebase, and Stripe for 100+ users',
+      'Designed secure Firestore booking logic to prevent double-bookings during peak demand',
+      'Streamlined payments and reservations, cutting admin costs by $100/month and doubling capacity',
+      'Optimized load speed with code splitting and lazy loading, reducing bundle size by 40%',
+
+    ],
+  },
+  {
     title: 'Research Assistant @ Lumba Lab',
     period: '2025–present',
     bullets: [
