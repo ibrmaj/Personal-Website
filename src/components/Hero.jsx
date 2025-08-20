@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import ibrahimImg from '../assets/ibrahim.jpeg';
+import Typewriter from './Typewriter';
 
 export default function Hero() {
   return (
@@ -25,7 +26,9 @@ export default function Hero() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.4, ease: 'easeInOut' }}
       >
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-softwhite">Hey, I'm Ibrahim</h1>
+        <h1 className="text-6xl md:text-5xl font-extrabold mb-4 text-softwhite leading-tight typewriter-h1">
+        <Typewriter text="hi, i'm ibrahim" typingSpeed={120} />
+        </h1>
       </motion.div>
       <motion.div
         className="flex-1 flex items-center justify-center z-10"

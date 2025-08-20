@@ -10,3 +10,47 @@ body {
 .test-tailwind {
   @apply text-teal bg-charcoal p-8;
 }
+
+@keyframes typeCaretBlink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.typewriter-h1 .typewriter-container {
+  text-align: left !important;
+}
+
+.typewriter-h1 {
+  text-align: left !important;
+}
+
+
+.typewriter-container {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  overflow: visible;
+}
+
+
+.typewriter-text {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.typewriter-caret {
+  display: inline-block;
+  width: 0.1em;
+  color: inherit;
+  margin-left: 2px;
+}
+
+.typewriter-caret.blink {
+  animation: typeCaretBlink 1s ease-in-out infinite;
+}
+
+.typewriter-caret.steady {
+  opacity: 1;
+}
